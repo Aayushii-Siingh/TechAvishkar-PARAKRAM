@@ -1,0 +1,411 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/*-- DIRECT TOP BUTTON--*/ 
+
+    .scroll-top{
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        z-index: 99;
+        background: white;
+        color: black;
+        border-radius: 30px;
+        padding: 10px;
+        font-weight: bold;
+        line-height: normal;
+        border: 2px solid #f12020;
+        cursor: pointer;
+        outline: none;
+    }
+/*--- DIRECT TOP BUTTON ENDS--*/
+
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  font-family: 'Lora', serif;
+  background-color: black ;
+
+  /*
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  */  
+}
+.logo img{
+  height: 150px;
+
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.nav-links li{
+  list-style: none;
+}
+
+.nav-links a{
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 14px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  color: rgb(226, 226, 226);
+  font-family: 'Lora', serif;
+  background-color: inherit;
+   /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+ /* Social icons */
+.social {
+  display: flex;  
+}
+
+.social li {
+  list-style: none;
+}
+
+.social li a {
+  width: 45px;
+  height: 45px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 50px;
+  font-size: 25px;
+  margin: 0 5px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+}
+
+.social li a .icon {
+  position: relative;
+  color: #262626;
+  transition: .5s;
+  z-index: 3;
+}
+
+.social li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.social li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: .5s;
+  z-index: 2;
+}
+.social li a:hover:before {
+  top: 0;
+}
+
+.social li:nth-child(1) a:before{
+  background: #3b5999;
+}
+
+.social li:nth-child(2) a:before{
+  background: #DD2A7B;
+}
+
+.social li:nth-child(3) a:before {
+  background: #00ACEE;
+}
+
+.social li:nth-child(4) a:before {
+  background: #0E76A8;
+}
+
+@media screen and (max-width:1024px){
+
+  .nav-links{
+  
+  width: 40%;
+  }
+}
+
+@media screen and (max-width:768px){
+
+  body{
+    overflow-x: hidden;
+  }
+  nav{
+    display: flex;
+  }
+  .nav-links{
+    width: 50%;
+  } 
+  .social{
+    display: flex;          
+  } 
+}
+
+/*******NAVBAR ENDS************/
+
+/* container begins */
+
+.container{
+  padding: 65px 90px;
+}
+
+h1{
+font-family: 'Lora', serif;
+text-align: center;
+display: block;
+padding: 30px 90px;
+}
+
+.img-container {
+  text-align: center;
+  height: auto;
+  width: 100%;
+  padding: 20px;
+}
+
+.container-img{
+  width: 900px;
+  height: 55  0px;
+}
+
+.text-container {
+left: 50%;
+font-weight: 400px;
+
+width: 1000px;
+text-align: center;
+margin: auto;
+}
+
+p{
+padding-top: 30px;
+font-size: 18px;
+font-family: 'Lora', serif;
+font-weight: 500;
+text-align: justify;
+line-height: 1.8em;
+
+}
+
+
+/* --------------- FOOTER SECTION start ------------------------------------*/
+
+footer{  
+  bottom: 10px;
+  width: 100%;
+  background: #111;
+}
+.main-content{
+  display: flex;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 30px 20px;
+}
+.box h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+}
+
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: #f12020;
+  top: -10px;
+}
+.left .content p{
+  text-align: justify;
+  color: #fff;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+}
+.left .content .social a{
+  padding: 0 2px;
+}
+.left .content .social a i{
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.left .content .social a i:hover{
+  background: #f12020;
+}
+.center .content .fa{
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .content .fa:hover{
+  background: #f12020;
+}
+.center .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .content .phone{
+  margin: 15px 0;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: #656565;
+}
+.right form .msg{
+  margin-top: 10px;
+}
+.right form input, .right form .msgForm{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+}
+.right form input:focus,
+.right form .msgForm:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+  color: white;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+.right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #f12020;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+.right form .btn button:hover{
+  background: #000;
+  color: white;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #151515;
+}
+.bottom center span{
+  color: #656565;
+}
+.bottom center a{
+  color: #f12020;
+  text-decoration: none;
+}
+.bottom center a:hover{
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+  }
+}
+
+
+
+
+/* --------------- FOOTER SECTION end------------------------------------*/
+
+
